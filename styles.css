@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    max-width: 80%;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
+
+#gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    grid-gap: 1rem;
+    flex-wrap: wrap;
+}
+.galleryImg{
+    max-width: 100%;
+    border-radius: 2%;
+    position: relative;
+    transition: transform 250ms;
+    cursor: pointer;
+}
+
+.codeCard:hover{
+    transform: translateY(-0.3rem);
+    box-shadow: 0.4rem 0.4rem 1rem black;
+}
+
+#popup{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.93);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: 200ms transform;
+    padding: 10rem;
+    margin: auto;
+
+}
+
+#selectedImage{
+    max-height: 100%;
+}
+
+.codeCard{
+    border-radius: 2%;
+    position: relative;
+    transition: transform 250ms;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.headerCode{
+    font-size: large;
+    font-weight: 600;
+    color: #1E40AF    ;
+}
+
+#selectedCode, #selectedCodeDescription{
+    color: white;
+    font-size: 3rem;
+}
+
+.displayBlock{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.header{
+    text-align: center;
+    margin-bottom: 5rem;
+    color: #1E40AF    ;
+}
